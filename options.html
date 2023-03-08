@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Opciones de la Extensión</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    #ipList {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #ipList li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    #ipList li:last-child {
+      border-bottom: none;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .ip {
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .mask {
+      font-style: italic;
+    }
+
+    button {
+      background-color: #f44336;
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 1px;
+	  transition-duration: 0.4s;
+      cursor: pointer;
+	  border-radius: 15px;
+    }
+	.button2 {background-color: #008CBA;} /* Azul */
+	.button3 {background-color: #4CAF50;} /* Verde */
+
+    button:hover {
+      background-color: #white;
+	  color: black; 
+      opacity: 0.8;
+    }
+
+    #clearAll {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Opciones de la Extensión</h1>
+ 
+  <div id="rule-count"></div>
+  <button class="button button3" id="addButton">Añadir red</button>
+  <button class="button button3" id="importButton">Importar desde CSV</button>
+  <button id="deleteAllButton">Borrar todas las redes</button>
+  <button class="button button2" id="aboutButton">Acerca de</button>
+   <ul id="ipList"></ul>
+  <script src="options.js"></script>
+
+
+</body>
+
+</html>

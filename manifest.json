@@ -1,0 +1,16 @@
+{
+  "name": "Analizador de IP",
+  "version": "1.0",
+  "description": "Extensión para analizar direcciones IP y determinar a qué red pertenecen",
+  "permissions": ["contextMenus", "storage"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icon16.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "manifest_version": 2
+}
